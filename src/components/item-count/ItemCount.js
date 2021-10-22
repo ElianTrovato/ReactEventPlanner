@@ -1,14 +1,28 @@
 import React, { useState } from "react";
 import "./ItemCount.css"
 
+
+
 function ItemCount() {
     const [count, setCount] = useState(1);
+
+    const stock = 25
+
     const increment = () => {
         setCount(count + 1);
     }
+      
     const decrement = () => {
-        setCount(count - 1);
+        setCount(count + 1);
     }
+    
+    
+    
+    if (setCount > stock) {
+        alert("No queda más Stock");    
+     }
+    
+ 
 
     return (
         <main id="producto">
@@ -28,6 +42,8 @@ function ItemCount() {
             </section>
         </main>
     );
+    
+    
 }
 
 

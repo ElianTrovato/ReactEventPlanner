@@ -1,7 +1,9 @@
 import React from "react";
+import "./CartWidget.css"
 
-const CartWidget = ({icon}) => {
-    return( <img src={icon}/>);
-};
+
+function CartWidget({ icon }) {
+    return (<img id="CarroImg" src={icon} />);
+}
 
 export default CartWidget;
